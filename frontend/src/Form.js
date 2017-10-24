@@ -1,9 +1,9 @@
 import React from "react"
-// import PropTypes from "prop-types"
+import PropTypes from "prop-types"
 
 import { Col, Form, FormGroup, Label, Input, Button } from "reactstrap"
 
-export default class SubmissionForm extends React.Component {
+class SubmissionForm extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -102,3 +102,9 @@ export default class SubmissionForm extends React.Component {
     )
   }
 }
+
+SubmissionForm.propTypes = {
+  onSubmitData: PropTypes.function.isRequired
+}
+
+export default SubmissionForm
