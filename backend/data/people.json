@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "name": "M",
+    "age": 40,
+    "email": "m@impactbyte.com",
+    "image": "m.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Haidar",
+    "age": 24,
+    "email": "haidar@impactbyte.com",
+    "image": "haidar.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Hanif",
+    "age": 20,
+    "email": "hanif@impactbyte.com",
+    "image": "hanif.jpg"
+  }
+]

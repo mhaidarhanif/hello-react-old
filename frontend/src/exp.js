@@ -1,19 +1,20 @@
-class Human {
-  constructor(age) {
-    this.age = age
-  }
-  setAge(newAge) {
-    this.age = newAge
-  }
+const print = text => {
+  console.log(text)
 }
 
-const Haidar = new Human(24)
-
-class Superhero extends Human {
-  constructor(age, skills) {
-    super(age)
-    this.skills = skills
-  }
+const lambretaPrint = text => {
+  setTimeout(() => {
+    console.log(text)
+  }, 1000)
 }
 
-const Supermane = new Superhero(40, "Fly")
+async function run() {
+  print("CEPET 1")
+  await lambretaPrint("LAMBAT 1")
+  await lambretaPrint("LAMBAT 2")
+  print("CEPET 2")
+  print("CEPET 3")
+  return "FINISH"
+}
+
+console.log(run())
