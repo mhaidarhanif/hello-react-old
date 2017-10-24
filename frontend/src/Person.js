@@ -56,8 +56,10 @@ class Person extends React.Component {
             <CardTitle>{this.props.name}</CardTitle>
             <CardText>
               {this.state.showEmail && `(${this.props.email})`}{" "}
-              {this.state.showAge && `is ${this.state.age} year`}
-              {this.state.age > 1 ? `s old` : ` old`}
+              {this.state.showAge &&
+                `is ${this.state.age} year${this.state.age > 1
+                  ? `s old`
+                  : ` old`}`}
             </CardText>
             {this.props.showControls && (
               <ButtonGroup>

@@ -104,7 +104,7 @@ class SubmissionForm extends React.Component {
 }
 
 SubmissionForm.propTypes = {
-  onSubmitData: PropTypes.function.isRequired
+  onSubmitData: PropTypes.func.isRequired
 }
 
 export default SubmissionForm
